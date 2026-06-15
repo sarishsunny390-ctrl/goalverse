@@ -263,6 +263,27 @@ Scan to follow GOALVERSE
     </div>
 
 </footer>
+<script>
+const API_TOKEN = "be11634ff5744a3f8f1e70937b9dcffb";
+    async function getPremierLeagueTable() {
+  try {
+    const response = await fetch(
+      "https://api.football-data.org/v4/competitions/PL/standings",
+      {
+        headers: {
+          "X-Auth-Token": API_TOKEN
+        }
+      }
+    );
 
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+getPremierLeagueTable();
+</script>
 </body>
 </html>
