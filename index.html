@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="GOALVERSE - Football News, Transfer Updates, Match Results and World Football Coverage">
+<meta name="keywords" content="Football News, GOALVERSE, Transfers, Match Results, World Cup, Champions League, Premier League">
+
+<link rel="icon" type="image/png" href="logo.png.png">
+
+<title>GOALVERSE - Football News & Updates</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    font-family:Arial,sans-serif;
+}
+
+.hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url('https://images.unsplash.com/photo-1574629810360-7efbbe195018');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.logo{
+    width:180px;
+    max-width:70%;
+    border-radius:50%;
+    border:4px solid #d4af37;
+    margin-bottom:25px;
+    box-shadow:0 0 15px rgba(212,175,55,0.6);
+}
+
+.hero h1{
+    color:#d4af37;
+    font-size:clamp(40px,8vw,80px);
+    margin-bottom:15px;
+}
+
+.subtitle{
+    color:#d4af37;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.description{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    line-height:1.6;
+}
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#111;
+    border:2px solid #d4af37;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#d4af37;
+    margin-bottom:12px;
+}
+
+.card p{
+    line-height:1.6;
+}
+
+.leagues{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+    margin-top:25px;
+}
+
+.league{
+    background:#111;
+    border:1px solid #d4af37;
+    border-radius:12px;
+    padding:18px;
+    text-align:center;
+    color:#d4af37;
+    font-weight:bold;
+}
+
+footer{
+    border-top:1px solid #d4af37;
+    padding:25px;
+    text-align:center;
+    color:#d4af37;
+}
+
+.founder{
+    margin-top:10px;
+    font-size:14px;
+    color:#aaa;
+}
+
+@media (max-width:768px){
+
+.logo{
+    width:130px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.subtitle{
+    font-size:20px;
+}
+
+.description{
+    font-size:18px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <div>
+
+        <img src="logo.png.png" alt="GOALVERSE Logo" class="logo">
+
+        <h1>GOALVERSE</h1>
+
+        <div class="subtitle">
+            Football News & Updates
+        </div>
+
+        <div class="description">
+            Latest Football News • Transfer Updates • Match Results • Breaking News • World Football Coverage
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="grid">
+
+        <div class="card">
+            <h2>📰 Latest Football News</h2>
+            <p>Breaking football news from around the world.</p>
+        </div>
+
+        <div class="card">
+            <h2>🔄 Transfer Updates</h2>
+            <p>Latest transfer rumours and confirmed deals.</p>
+        </div>
+
+        <div class="card">
+            <h2>🏆 Match Results</h2>
+            <p>Live scores, fixtures and match reports.</p>
+        </div>
+
+        <div class="card">
+            <h2>🚨 Breaking News</h2>
+            <p>Instant football updates as they happen.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h1 style="text-align:center;color:#d4af37;margin-bottom:25px;">
+        Major Competitions
+    </h1>
+
+    <div class="leagues">
+
+        <div class="league">🏆 FIFA World Cup</div>
+        <div class="league">⭐ Champions League</div>
+        <div class="league">👑 Premier League</div>
+        <div class="league">🇪🇸 La Liga</div>
+        <div class="league">🇮🇹 Serie A</div>
+        <div class="league">🇩🇪 Bundesliga</div>
+        <div class="league">🌍 Other Leagues</div>
+
+    </div>
+
+</section>
+</section>
+
+<div style="text-align:center; margin:40px 0;">
+
+<h2 style="color:#d4af37;">
+📸 Follow GOALVERSE on Instagram
+</h2>
+
+<img src="instagram-qr.png.jpg"
+alt="Instagram QR Code"
+style="
+width:80px;
+height:auto;
+border:2px solid #d4af37;
+border-radius:10px;
+margin-top:10px;
+">
+
+
+">
+
+<p style="margin-top:15px;">
+Scan to follow GOALVERSE
+</p>
+
+</div>
+
+<footer>
+
+<footer>
+
+    © GOALVERSE
+
+    <div class="founder">
+        Founder: Sarish
+    </div>
+
+</footer>
+
+</body>
+</html>
