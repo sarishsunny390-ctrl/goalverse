@@ -262,7 +262,16 @@ Scan to follow GOALVERSE
         Founder: Sarish
     </div>
 
-</footer>
+
+    </footer>
+<h2 style="color:#d4af37;text-align:center;margin-top:50px;">
+🏆 Premier League Table
+</h2>
+
+<div id="league-table"
+style="max-width:800px;margin:20px auto;padding:20px;background:#111;border:1px solid #d4af37;border-radius:10px;">
+Loading table...
+</div>
 <script>
 const API_TOKEN = "be11634ff5744a3f8f1e70937b9dcffb";
     async function getPremierLeagueTable() {
@@ -278,6 +287,30 @@ const API_TOKEN = "be11634ff5744a3f8f1e70937b9dcffb";
 
     const data = await response.json();
     console.log(data);
+      const standings = data.standings[0].table;
+
+let html = `
+<table style="width:100%;color:white;border-collapse:collapse;">
+<tr>
+<th>Pos</th>
+<th>Club</th>
+<th>Pts</th>
+</tr>
+`;
+
+standings.forEach(team => {
+html += `
+<tr>
+<td>${team.position}</td>
+<td>${team.team.name}</td>
+<td>${team.points}</td>
+</tr>
+`;
+});
+
+html += "</table>";
+
+document.getElementById("league-table").innerHTML = html;
   } catch (error) {
     console.error(error);
   }
