@@ -286,6 +286,7 @@ const API_TOKEN = "be11634ff5744a3f8f1e70937b9dcffb";
     );
 
     const data = await response.json();
+      alert(JSON.stringify(data));
     console.log(data);
       const standings = data.standings[0].table;
 
